@@ -38,7 +38,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Calendário da Copa é um projeto que mostra os jogos da Copa de 2022.
 
-[🔗 Acesse aqui](https://dzzanis.github.io/nlw-copa-explorer/?target=_blank)
+[🔗 Acesse aqui](https://dzzanis.github.io/nlw-copa-explorer)
 
 <br>
 

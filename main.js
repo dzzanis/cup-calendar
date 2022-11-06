@@ -1,3 +1,10 @@
+window.addEventListener('scroll', onScroll)
+onScroll()
+
+function onScroll() {
+  showBackToTopButtonOnScroll()
+}
+
 function createGame(player1, hour, player2) {
   return `
   <li>
@@ -30,3 +37,11 @@ document.querySelector('#cards').innerHTML =
       createGame('portugal', '16:00', 'uruguay')
   ) +
   createCard('02/12', 'sexta', createGame('brazil', '16:00', 'cameroon'))
+
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 50) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}

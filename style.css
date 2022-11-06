@@ -141,6 +141,26 @@ header {
   }
 }
 
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton circle {
+  fill: var(--card-color-primary);
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+}
+
 @media (min-width: 700px) {
   #cards {
     max-width: 670px;

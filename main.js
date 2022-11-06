@@ -8,9 +8,15 @@ function onScroll() {
 function createGame(player1, hour, player2) {
   return `
   <li>
-    <img src="./assets/icon-${player1}.svg" alt="Bandeira do ${player1}" />
+    <div>
+      <img src="./assets/icon-${player1}.svg" alt="Bandeira do time ${player1}" />
+      <p>${player1}</p>
+    </div>
     <strong>${hour}</strong>
-    <img src="./assets/icon-${player2}.svg" alt="Bandeira da ${player2}" />
+    <div>
+      <img src="./assets/icon-${player2}.svg" alt="Bandeira do time ${player2}" />
+      <p>${player2}</p>
+    </div>
   </li>
   `
 }

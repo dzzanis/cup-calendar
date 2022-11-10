@@ -5,6 +5,14 @@ function onScroll() {
   showBackToTopButtonOnScroll()
 }
 
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 1050) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
 function createGame(player1, hour, player2) {
   return `
   <li>
@@ -132,10 +140,9 @@ document.querySelector('#cards').innerHTML =
       createGame('brasil', '16:00', 'camarões')
   )
 
-function showBackToTopButtonOnScroll() {
-  if (scrollY > 1050) {
-    backToTopButton.classList.add('show')
-  } else {
-    backToTopButton.classList.remove('show')
-  }
+const numeroAleatorio = Math.floor(Math.random() * 3)
+if (numeroAleatorio === 1) {
+  document.body.classList.add('blue')
+} else if (numeroAleatorio === 2) {
+  document.body.classList.add('green')
 }

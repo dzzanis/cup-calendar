@@ -139,6 +139,62 @@ function allGames() {
         createGame('gana', '12:00', 'uruguai') +
         createGame('sérvia', '16:00', 'suíça') +
         createGame('brasil', '16:00', 'camarões')
+    ) +
+    createCard(
+      '03/12',
+      'sábado',
+      createGame('a confirmar', '12:00', 'a confirmar') +
+        createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '04/12',
+      'domingo',
+      createGame('a confirmar', '12:00', 'a confirmar') +
+        createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '05/12',
+      'segunda',
+      createGame('a confirmar', '12:00', 'a confirmar') +
+        createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '06/12',
+      'terça',
+      createGame('a confirmar', '12:00', 'a confirmar') +
+        createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '09/12',
+      'sexta',
+      createGame('a confirmar', '12:00', 'a confirmar') +
+        createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '10/12',
+      'sábado',
+      createGame('a confirmar', '12:00', 'a confirmar') +
+        createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '13/12',
+      'terça',
+      createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '14/12',
+      'quarta',
+      createGame('a confirmar', '16:00', 'a confirmar')
+    ) +
+    createCard(
+      '17/12',
+      'sábado',
+      createGame('a confirmar', '12:00', 'a confirmar')
+    ) +
+    createCard(
+      '18/12',
+      'domingo',
+      createGame('a confirmar', '12:00', 'a confirmar')
     )
   document.querySelector(
     '#menuFiltro'

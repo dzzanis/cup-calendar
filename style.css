@@ -59,6 +59,18 @@ header {
   gap: 32px;
 }
 
+#menuFiltro {
+  color: var(--card-color-primary);
+  font-size: 10px;
+  display: block;
+  padding: 32px 0px;
+}
+
+#menuFiltro:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .card {
   padding: 32px 23px;
   text-align: center;

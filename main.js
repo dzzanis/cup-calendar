@@ -214,7 +214,51 @@ function brasilGames() {
   document.querySelector('#cards').innerHTML =
     createCard('24/11', 'quinta', createGame('brasil', '16:00', 'sérvia')) +
     createCard('28/11', 'segunda', createGame('brasil', '13:00', 'suíça')) +
-    createCard('02/12', 'sexta', createGame('brasil', '16:00', 'camarões'))
+    createCard('02/12', 'sexta', createGame('brasil', '16:00', 'camarões')) +
+    `
+    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
+      Jogos caso o Brasil fique em 1º lugar no grupo G:
+    </h2>
+    ` +
+    createCard(
+      '05/12',
+      'segunda',
+      createGame('brasil', '16:00', 'a confirmar')
+    ) +
+    createCard('09/12', 'sexta', createGame('brasil', '12:00', 'a confirmar')) +
+    createCard('13/12', 'terça', createGame('brasil', '16:00', 'a confirmar')) +
+    `
+    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
+      Jogos caso o Brasil fique em 2º lugar no grupo G:
+    </h2>
+    ` +
+    createCard('06/12', 'terça', createGame('brasil', '16:00', 'a confirmar')) +
+    createCard(
+      '10/12',
+      'sábado',
+      createGame('brasil', '12:00', 'a confirmar')
+    ) +
+    createCard(
+      '14/12',
+      'quarta',
+      createGame('brasil', '16:00', 'a confirmar')
+    ) +
+    `
+    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
+      Disputa pelo 3º lugar:
+    </h2>
+    ` +
+    createCard(
+      '17/12',
+      'sábado',
+      createGame('a confirmar', '12:00', 'a confirmar')
+    ) +
+    `
+    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
+      Final:
+    </h2>
+    ` +
+    createCard('18/12', 'domingo', createGame('brasil', '12:00', 'a confirmar'))
   document.querySelector(
     '#menuFiltro'
   ).innerHTML = `<a onclick="allGames()">< Ver todos os jogos</a>`

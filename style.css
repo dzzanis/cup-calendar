@@ -182,6 +182,16 @@ header {
   font-size: 14px;
 }
 
+footer {
+  padding-block: 4rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--card-color-primary);
+}
+
 #backToTopButton {
   position: fixed;
   bottom: 1rem;

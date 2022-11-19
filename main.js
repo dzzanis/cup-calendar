@@ -1,3 +1,6 @@
+const brazilGamesMenu = document.querySelector('#brazilGamesMenu')
+const allGamesMenu = document.querySelector('#allGamesMenu')
+
 window.addEventListener('scroll', onScroll)
 onScroll()
 
@@ -196,9 +199,8 @@ function allGames() {
       'domingo',
       createGame('a confirmar', '12:00', 'a confirmar')
     )
-  document.querySelector(
-    '#menuFiltro'
-  ).innerHTML = `<a onclick="brasilGames()">Ver apenas os jogos do Brasil ></a>`
+  allGamesMenu.style.borderBottom = '2px solid var(--card-color-primary)'
+  brazilGamesMenu.style.borderBottom = '0px'
 }
 
 allGames()
@@ -259,7 +261,6 @@ function brasilGames() {
     </h2>
     ` +
     createCard('18/12', 'domingo', createGame('brasil', '12:00', 'a confirmar'))
-  document.querySelector(
-    '#menuFiltro'
-  ).innerHTML = `<a onclick="allGames()">< Ver todos os jogos</a>`
+  brazilGamesMenu.style.borderBottom = '2px solid var(--card-color-primary)'
+  allGamesMenu.style.borderBottom = '0px'
 }

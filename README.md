@@ -18,7 +18,7 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
 <br>
 
 <p align="center">
-  <img alt="calendario da copa" src="./.github/preview.jpg" width="100%">
+  <img alt="calendário da copa" src="./.github/preview.jpg" width="100%">
 </p>
 
 <br>
@@ -38,7 +38,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Calendário da Copa é um projeto que mostra os jogos da Copa de 2022.
 
-[🔗 Acesse aqui](https://dzzanis.github.io/nlw-copa-explorer)
+[🔗 Acesse aqui](https://dzzanis.github.io/cup-calendar)
 
 <br>
 

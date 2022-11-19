@@ -261,7 +261,6 @@ function brasilGames() {
     </h2>
     ` +
     createCard('18/12', 'domingo', createGame('brasil', '12:00', 'a confirmar'))
-  // brazilGamesMenu.style.borderBottom = '2px solid var(--card-color-primary)'
   brazilGamesMenu.classList.add('activated')
   allGamesMenu.classList.remove('activated')
 }

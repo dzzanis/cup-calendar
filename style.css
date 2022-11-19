@@ -53,17 +53,17 @@ header {
   text-align: center;
 }
 
-.menuFiltro {
+.menuFilter {
   margin-bottom: 52px;
 }
-.menuFiltro ul {
+.menuFilter ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
 
-.menuFiltro ul li a {
+.menuFilter ul li a {
   color: var(--card-color-primary);
   font-size: 12px;
   opacity: 0.8;
@@ -71,11 +71,11 @@ header {
   padding: 16px 12px;
 }
 
-.menuFiltro ul li a:hover {
+.menuFilter ul li a:hover {
   opacity: 1;
 }
 
-.menuFiltro ul li a.activated {
+.menuFilter ul li a.activated {
   border-bottom: 2px solid var(--card-color-primary);
   opacity: 1;
 }

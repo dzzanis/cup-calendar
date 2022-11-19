@@ -66,12 +66,18 @@ header {
 .menuFiltro ul li a {
   color: var(--card-color-primary);
   font-size: 12px;
+  opacity: 0.8;
   text-decoration: none;
   padding: 16px 12px;
 }
 
 .menuFiltro ul li a:hover {
-  opacity: 0.8;
+  opacity: 1;
+}
+
+.menuFiltro ul li a.activated {
+  border-bottom: 2px solid var(--card-color-primary);
+  opacity: 1;
 }
 
 #cards {

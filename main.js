@@ -199,8 +199,8 @@ function allGames() {
       'domingo',
       createGame('a confirmar', '12:00', 'a confirmar')
     )
-  allGamesMenu.style.borderBottom = '2px solid var(--card-color-primary)'
-  brazilGamesMenu.style.borderBottom = '0px'
+  allGamesMenu.classList.add('activated')
+  brazilGamesMenu.classList.remove('activated')
 }
 
 allGames()
@@ -261,6 +261,7 @@ function brasilGames() {
     </h2>
     ` +
     createCard('18/12', 'domingo', createGame('brasil', '12:00', 'a confirmar'))
-  brazilGamesMenu.style.borderBottom = '2px solid var(--card-color-primary)'
-  allGamesMenu.style.borderBottom = '0px'
+  // brazilGamesMenu.style.borderBottom = '2px solid var(--card-color-primary)'
+  brazilGamesMenu.classList.add('activated')
+  allGamesMenu.classList.remove('activated')
 }

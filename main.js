@@ -69,8 +69,8 @@ function allGames() {
         'terça',
         createGame('argentina', '07:00', 'arábia saudita', '1 x 2') +
           createGame('dinamarca', '10:00', 'tunísia', '0 x 0') +
-          createGame('méxico', '13:00', 'polônia', '') +
-          createGame('frança', '16:00', 'austrália', '')
+          createGame('méxico', '13:00', 'polônia', '0 x 0') +
+          createGame('frança', '16:00', 'austrália', '4 x 1')
       ) +
       createCard(
         '23/11',

@@ -1,5 +1,6 @@
 const brazilGamesMenu = document.querySelector('#brazilGamesMenu')
 const allGamesMenu = document.querySelector('#allGamesMenu')
+const todaysGamesMenu = document.querySelector('#todaysGamesMenu')
 
 window.addEventListener('scroll', onScroll)
 onScroll()
@@ -39,7 +40,7 @@ let delay = -0.01
 function createCard(date, day, games) {
   delay += 0.01
   return `
-  <div class="card" style="animation-delay: ${delay}s">
+  <div class="card" id="${date}" style="animation-delay: ${delay}s">
     <h2>${date} <span>${day}</span></h2>
     <ul>
       ${games}
@@ -211,6 +212,13 @@ function allGames() {
     allGamesMenu.classList.add('activated')
     brazilGamesMenu.classList.remove('activated')
   }
+  updateFilterDate()
+}
+
+function updateFilterDate() {
+  today = new Date()
+  const formattedToday = today.getDate() + '/' + (today.getMonth() + 1)
+  todaysGamesMenu.href = `#${formattedToday}`
 }
 
 allGames()
@@ -304,4 +312,5 @@ function brasilGames() {
     brazilGamesMenu.classList.add('activated')
     allGamesMenu.classList.remove('activated')
   }
+  updateFilterDate()
 }

@@ -75,10 +75,10 @@ function allGames() {
       createCard(
         '23/11',
         'quarta',
-        createGame('marrocos', '07:00', 'croácia', '') +
-          createGame('alemanha', '10:00', 'japão', '') +
-          createGame('espanha', '13:00', 'costa rica', '') +
-          createGame('bélgica', '16:00', 'canadá', '')
+        createGame('marrocos', '07:00', 'croácia', '0 x 0') +
+          createGame('alemanha', '10:00', 'japão', '1 x 2') +
+          createGame('espanha', '13:00', 'costa rica', '7 x 0') +
+          createGame('bélgica', '16:00', 'canadá', '1 x 0')
       ) +
       createCard(
         '24/11',

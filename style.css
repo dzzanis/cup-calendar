@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --card-title-border-color: #746615;
   --card-color-primary: #f7dd43;
@@ -78,6 +82,10 @@ header {
 .menuFilter ul li a.activated {
   border-bottom: 2px solid var(--card-color-primary);
   opacity: 1;
+}
+
+.menuFilter ul li a.hidden {
+  display: none;
 }
 
 #cards {

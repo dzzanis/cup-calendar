@@ -84,18 +84,18 @@ function allGames() {
       createCard(
         '24/11',
         'quinta',
-        createGame('suíça', '07:00', 'camarões', '') +
-          createGame('uruguai', '10:00', 'coreia do sul', '') +
-          createGame('portugal', '13:00', 'gana', '') +
-          createGame('brasil', '16:00', 'sérvia', '')
+        createGame('suíça', '07:00', 'camarões', '1 x 0') +
+          createGame('uruguai', '10:00', 'coreia do sul', '0 x 0') +
+          createGame('portugal', '13:00', 'gana', '3 x 2') +
+          createGame('brasil', '16:00', 'sérvia', '2 x 0')
       ) +
       createCard(
         '25/11',
         'sexta',
-        createGame('gales', '07:00', 'irã', '') +
-          createGame('catar', '10:00', 'senegal', '') +
-          createGame('holanda', '13:00', 'equador', '') +
-          createGame('inglaterra', '16:00', 'estados unidos', '')
+        createGame('gales', '07:00', 'irã', '0 x 2') +
+          createGame('catar', '10:00', 'senegal', '1 x 3') +
+          createGame('holanda', '13:00', 'equador', '1 x 1') +
+          createGame('inglaterra', '16:00', 'estados unidos', '0 x 0')
       ) +
       createCard(
         '26/11',
@@ -212,13 +212,74 @@ function allGames() {
     allGamesMenu.classList.add('activated')
     brazilGamesMenu.classList.remove('activated')
   }
-  updateFilterDate()
+  updateFilterDate('allGamesMenu')
 }
 
-function updateFilterDate() {
+function updateFilterDate(filterMenu) {
   today = new Date()
   const formattedToday = today.getDate() + '/' + (today.getMonth() + 1)
   todaysGamesMenu.href = `#${formattedToday}`
+  if (filterMenu === 'allGamesMenu') {
+    if (isGameDay(formattedToday)) {
+      todaysGamesMenu.classList.remove('hidden')
+    } else {
+      todaysGamesMenu.classList.add('hidden')
+    }
+  } else {
+    if (isBrazilGameDay(formattedToday)) {
+      todaysGamesMenu.classList.remove('hidden')
+    } else {
+      todaysGamesMenu.classList.add('hidden')
+    }
+  }
+}
+
+function isGameDay(day) {
+  switch (day) {
+    case '20/11':
+    case '21/11':
+    case '22/11':
+    case '23/11':
+    case '24/11':
+    case '25/11':
+    case '26/11':
+    case '27/11':
+    case '28/11':
+    case '29/11':
+    case '30/11':
+    case '01/12':
+    case '02/12':
+    case '03/12':
+    case '04/12':
+    case '05/12':
+    case '06/12':
+    case '09/12':
+    case '10/12':
+    case '13/12':
+    case '14/12':
+    case '17/12':
+    case '18/12':
+      return true
+      break
+  }
+}
+
+function isBrazilGameDay(day) {
+  switch (day) {
+    case '24/11':
+    case '28/11':
+    case '02/12':
+    case '05/12':
+    case '09/12':
+    case '13/12':
+    case '06/12':
+    case '10/12':
+    case '14/12':
+    case '17/12':
+    case '18/12':
+      return true
+      break
+  }
 }
 
 allGames()
@@ -237,7 +298,7 @@ function brasilGames() {
       createCard(
         '24/11',
         'quinta',
-        createGame('brasil', '16:00', 'sérvia', '')
+        createGame('brasil', '16:00', 'sérvia', '2 x 0')
       ) +
       createCard(
         '28/11',

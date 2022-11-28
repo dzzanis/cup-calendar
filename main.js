@@ -26,7 +26,7 @@ function createGame(player1, hour, player2, result) {
     </div>
     <div>
       <strong>${hour}</strong>
-      <p>${result}</p>
+      <p class="results">${result}</p>
     </div>
     <div>
       <img src="./assets/icon-${player2}.svg" alt="Bandeira do time ${player2}" />
@@ -100,18 +100,18 @@ function allGames() {
       createCard(
         '26/11',
         'sábado',
-        createGame('tunísia', '07:00', 'austrália', '') +
-          createGame('polônia', '10:00', 'arábia saudita', '') +
-          createGame('frança', '13:00', 'dinamarca', '') +
-          createGame('argentina', '16:00', 'méxico', '')
+        createGame('tunísia', '07:00', 'austrália', '0 x 1') +
+          createGame('polônia', '10:00', 'arábia saudita', '2 x 0') +
+          createGame('frança', '13:00', 'dinamarca', '2 x 1') +
+          createGame('argentina', '16:00', 'méxico', '2 x 0')
       ) +
       createCard(
         '27/11',
         'domingo',
-        createGame('japão', '07:00', 'costa rica', '') +
-          createGame('bélgica', '10:00', 'marrocos', '') +
-          createGame('croácia', '13:00', 'canadá', '') +
-          createGame('espanha', '16:00', 'alemanha', '')
+        createGame('japão', '07:00', 'costa rica', '0 x 1') +
+          createGame('bélgica', '10:00', 'marrocos', '0 x 2') +
+          createGame('croácia', '13:00', 'canadá', '4 x 1') +
+          createGame('espanha', '16:00', 'alemanha', '1 x 1')
       ) +
       createCard(
         '28/11',

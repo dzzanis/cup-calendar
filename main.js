@@ -116,10 +116,10 @@ function allGames() {
       createCard(
         '28/11',
         'segunda',
-        createGame('camarões', '07:00', 'sérvia', '') +
-          createGame('coreia do sul', '10:00', 'gana', '') +
-          createGame('brasil', '13:00', 'suíça', '') +
-          createGame('portugal', '16:00', 'uruguai', '')
+        createGame('camarões', '07:00', 'sérvia', '3 x 3') +
+          createGame('coreia do sul', '10:00', 'gana', '2 x 3') +
+          createGame('brasil', '13:00', 'suíça', '1 x 0') +
+          createGame('portugal', '16:00', 'uruguai', '2 x 0')
       ) +
       createCard(
         '29/11',
@@ -303,7 +303,7 @@ function brasilGames() {
       createCard(
         '28/11',
         'segunda',
-        createGame('brasil', '13:00', 'suíça', '')
+        createGame('brasil', '13:00', 'suíça', '1 x 0')
       ) +
       createCard(
         '02/12',

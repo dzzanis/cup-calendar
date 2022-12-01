@@ -132,10 +132,10 @@ function allGames() {
       createCard(
         '30/11',
         'quarta',
-        createGame('tunísia', '12:00', 'frança', '') +
-          createGame('austrália', '12:00', 'dinamarca', '') +
-          createGame('polônia', '16:00', 'argentina', '') +
-          createGame('arábia saudita', '16:00', 'méxico', '')
+        createGame('tunísia', '12:00', 'frança', '1 x 0') +
+          createGame('austrália', '12:00', 'dinamarca', '1 x 0') +
+          createGame('polônia', '16:00', 'argentina', '0 x 2') +
+          createGame('arábia saudita', '16:00', 'méxico', '1 x 2')
       ) +
       createCard(
         '01/12',
@@ -156,14 +156,14 @@ function allGames() {
       createCard(
         '03/12',
         'sábado',
-        createGame('a confirmar', '12:00', 'a confirmar', '') +
-          createGame('a confirmar', '16:00', 'a confirmar', '')
+        createGame('holanda', '12:00', 'estados unidos', '') +
+          createGame('argentina', '16:00', 'austrália', '')
       ) +
       createCard(
         '04/12',
         'domingo',
-        createGame('a confirmar', '12:00', 'a confirmar', '') +
-          createGame('a confirmar', '16:00', 'a confirmar', '')
+        createGame('frança', '12:00', 'polônia', '') +
+          createGame('inglaterra', '16:00', 'senegal', '')
       ) +
       createCard(
         '05/12',
@@ -218,7 +218,11 @@ function allGames() {
 function updateFilterDate(filterMenu) {
   today = new Date()
   const formattedToday = today.getDate() + '/' + (today.getMonth() + 1)
-  todaysGamesMenu.href = `#${formattedToday}`
+  if (formattedToday.length === 5) {
+    todaysGamesMenu.href = `#${formattedToday}`
+  } else {
+    todaysGamesMenu.href = `#${'0' + formattedToday}`
+  }
   if (filterMenu === 'allGamesMenu') {
     if (isGameDay(formattedToday)) {
       todaysGamesMenu.classList.remove('hidden')
@@ -247,13 +251,13 @@ function isGameDay(day) {
     case '28/11':
     case '29/11':
     case '30/11':
-    case '01/12':
-    case '02/12':
-    case '03/12':
-    case '04/12':
-    case '05/12':
-    case '06/12':
-    case '09/12':
+    case '1/12':
+    case '2/12':
+    case '3/12':
+    case '4/12':
+    case '5/12':
+    case '6/12':
+    case '9/12':
     case '10/12':
     case '13/12':
     case '14/12':

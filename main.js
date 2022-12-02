@@ -140,10 +140,10 @@ function allGames() {
       createCard(
         '01/12',
         'quinta',
-        createGame('croácia', '12:00', 'bélgica', '') +
-          createGame('canadá', '12:00', 'marrocos', '') +
-          createGame('japão', '16:00', 'espanha', '') +
-          createGame('costa rica', '16:00', 'alemanha', '')
+        createGame('croácia', '12:00', 'bélgica', '0 x 0') +
+          createGame('canadá', '12:00', 'marrocos', '1 x 2') +
+          createGame('japão', '16:00', 'espanha', '2 x 1') +
+          createGame('costa rica', '16:00', 'alemanha', '2 x 4')
       ) +
       createCard(
         '02/12',
@@ -272,11 +272,11 @@ function isBrazilGameDay(day) {
   switch (day) {
     case '24/11':
     case '28/11':
-    case '02/12':
-    case '05/12':
-    case '09/12':
+    case '2/12':
+    case '5/12':
+    case '9/12':
     case '13/12':
-    case '06/12':
+    case '6/12':
     case '10/12':
     case '14/12':
     case '17/12':

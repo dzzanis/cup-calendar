@@ -148,10 +148,10 @@ function allGames() {
       createCard(
         '02/12',
         'sexta',
-        createGame('coreia do sul', '12:00', 'portugal', '') +
-          createGame('gana', '12:00', 'uruguai', '') +
-          createGame('sérvia', '16:00', 'suíça', '') +
-          createGame('brasil', '16:00', 'camarões', '')
+        createGame('coreia do sul', '12:00', 'portugal', '2 x 1') +
+          createGame('gana', '12:00', 'uruguai', '0 x 2') +
+          createGame('sérvia', '16:00', 'suíça', '2 x 3') +
+          createGame('brasil', '16:00', 'camarões', '0 x 1')
       ) +
       createCard(
         '03/12',
@@ -168,14 +168,14 @@ function allGames() {
       createCard(
         '05/12',
         'segunda',
-        createGame('a confirmar', '12:00', 'a confirmar', '') +
-          createGame('a confirmar', '16:00', 'a confirmar', '')
+        createGame('japão', '12:00', 'croácia', '') +
+          createGame('brasil', '16:00', 'coreia do sul', '')
       ) +
       createCard(
         '06/12',
         'terça',
-        createGame('a confirmar', '12:00', 'a confirmar', '') +
-          createGame('a confirmar', '16:00', 'a confirmar', '')
+        createGame('marrocos', '12:00', 'espanha', '') +
+          createGame('portugal', '16:00', 'suíça', '')
       ) +
       createCard(
         '09/12',
@@ -312,17 +312,12 @@ function brasilGames() {
       createCard(
         '02/12',
         'sexta',
-        createGame('brasil', '16:00', 'camarões', '')
+        createGame('brasil', '16:00', 'camarões', '0 x 1')
       ) +
-      `
-    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
-      Jogos caso o Brasil fique em 1º lugar no grupo G:
-    </h2>
-    ` +
       createCard(
         '05/12',
         'segunda',
-        createGame('brasil', '16:00', 'a confirmar', '')
+        createGame('brasil', '16:00', 'coreia do sul', '')
       ) +
       createCard(
         '09/12',
@@ -332,26 +327,6 @@ function brasilGames() {
       createCard(
         '13/12',
         'terça',
-        createGame('brasil', '16:00', 'a confirmar', '')
-      ) +
-      `
-    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
-      Jogos caso o Brasil fique em 2º lugar no grupo G:
-    </h2>
-    ` +
-      createCard(
-        '06/12',
-        'terça',
-        createGame('brasil', '16:00', 'a confirmar', '')
-      ) +
-      createCard(
-        '10/12',
-        'sábado',
-        createGame('brasil', '12:00', 'a confirmar', '')
-      ) +
-      createCard(
-        '14/12',
-        'quarta',
         createGame('brasil', '16:00', 'a confirmar', '')
       ) +
       `

@@ -156,14 +156,14 @@ function allGames() {
       createCard(
         '03/12',
         'sábado',
-        createGame('holanda', '12:00', 'estados unidos', '') +
-          createGame('argentina', '16:00', 'austrália', '')
+        createGame('holanda', '12:00', 'estados unidos', '3 x 1') +
+          createGame('argentina', '16:00', 'austrália', '2 x 1')
       ) +
       createCard(
         '04/12',
         'domingo',
-        createGame('frança', '12:00', 'polônia', '') +
-          createGame('inglaterra', '16:00', 'senegal', '')
+        createGame('frança', '12:00', 'polônia', '3 x 1') +
+          createGame('inglaterra', '16:00', 'senegal', '3 x 0')
       ) +
       createCard(
         '05/12',
@@ -181,13 +181,13 @@ function allGames() {
         '09/12',
         'sexta',
         createGame('a confirmar', '12:00', 'a confirmar', '') +
-          createGame('a confirmar', '16:00', 'a confirmar', '')
+          createGame('holanda', '16:00', 'argentina', '')
       ) +
       createCard(
         '10/12',
         'sábado',
         createGame('a confirmar', '12:00', 'a confirmar', '') +
-          createGame('a confirmar', '16:00', 'a confirmar', '')
+          createGame('inglaterra', '16:00', 'frança', '')
       ) +
       createCard(
         '13/12',

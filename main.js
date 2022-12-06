@@ -168,8 +168,8 @@ function allGames() {
       createCard(
         '05/12',
         'segunda',
-        createGame('japão', '12:00', 'croácia', '') +
-          createGame('brasil', '16:00', 'coreia do sul', '')
+        createGame('japão', '12:00', 'croácia', '1 (1) x 1 (3)') +
+          createGame('brasil', '16:00', 'coreia do sul', '4 x 1')
       ) +
       createCard(
         '06/12',
@@ -180,7 +180,7 @@ function allGames() {
       createCard(
         '09/12',
         'sexta',
-        createGame('a confirmar', '12:00', 'a confirmar', '') +
+        createGame('croácia', '12:00', 'brasil', '') +
           createGame('holanda', '16:00', 'argentina', '')
       ) +
       createCard(
@@ -276,9 +276,6 @@ function isBrazilGameDay(day) {
     case '5/12':
     case '9/12':
     case '13/12':
-    case '6/12':
-    case '10/12':
-    case '14/12':
     case '17/12':
     case '18/12':
       return true
@@ -317,12 +314,12 @@ function brasilGames() {
       createCard(
         '05/12',
         'segunda',
-        createGame('brasil', '16:00', 'coreia do sul', '')
+        createGame('brasil', '16:00', 'coreia do sul', '4 x 1')
       ) +
       createCard(
         '09/12',
         'sexta',
-        createGame('brasil', '12:00', 'a confirmar', '')
+        createGame('croácia', '12:00', 'brasil', '')
       ) +
       createCard(
         '13/12',

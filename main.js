@@ -174,8 +174,8 @@ function allGames() {
       createCard(
         '06/12',
         'terça',
-        createGame('marrocos', '12:00', 'espanha', '') +
-          createGame('portugal', '16:00', 'suíça', '')
+        createGame('marrocos', '12:00', 'espanha', '0 (3) x 0 (0)') +
+          createGame('portugal', '16:00', 'suíça', '6 x 1')
       ) +
       createCard(
         '09/12',
@@ -186,7 +186,7 @@ function allGames() {
       createCard(
         '10/12',
         'sábado',
-        createGame('a confirmar', '12:00', 'a confirmar', '') +
+        createGame('marrocos', '12:00', 'portugal', '') +
           createGame('inglaterra', '16:00', 'frança', '')
       ) +
       createCard(

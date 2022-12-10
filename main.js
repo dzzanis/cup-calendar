@@ -180,8 +180,8 @@ function allGames() {
       createCard(
         '09/12',
         'sexta',
-        createGame('croácia', '12:00', 'brasil', '') +
-          createGame('holanda', '16:00', 'argentina', '')
+        createGame('croácia', '12:00', 'brasil', '1 (4) x 1 (2)') +
+          createGame('holanda', '16:00', 'argentina', '2 (3) x 2 (4)')
       ) +
       createCard(
         '10/12',
@@ -192,7 +192,7 @@ function allGames() {
       createCard(
         '13/12',
         'terça',
-        createGame('a confirmar', '16:00', 'a confirmar', '')
+        createGame('argentina', '16:00', 'croácia', '')
       ) +
       createCard(
         '14/12',
@@ -275,9 +275,6 @@ function isBrazilGameDay(day) {
     case '2/12':
     case '5/12':
     case '9/12':
-    case '13/12':
-    case '17/12':
-    case '18/12':
       return true
       break
   }
@@ -319,32 +316,7 @@ function brasilGames() {
       createCard(
         '09/12',
         'sexta',
-        createGame('croácia', '12:00', 'brasil', '')
-      ) +
-      createCard(
-        '13/12',
-        'terça',
-        createGame('brasil', '16:00', 'a confirmar', '')
-      ) +
-      `
-    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
-      Disputa pelo 3º lugar:
-    </h2>
-    ` +
-      createCard(
-        '17/12',
-        'sábado',
-        createGame('a confirmar', '12:00', 'a confirmar', '')
-      ) +
-      `
-    <h2 class="phaseSeparation" style="animation-delay: ${delay}s">
-      Final:
-    </h2>
-    ` +
-      createCard(
-        '18/12',
-        'domingo',
-        createGame('brasil', '12:00', 'a confirmar', '')
+        createGame('croácia', '12:00', 'brasil', '1 (4) x 1 (2)')
       )
     brazilGamesMenu.classList.add('activated')
     allGamesMenu.classList.remove('activated')

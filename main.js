@@ -197,17 +197,17 @@ function allGames() {
       createCard(
         '14/12',
         'quarta',
-        createGame('frança', '16:00', 'marrocos', '')
+        createGame('frança', '16:00', 'marrocos', '2 x 0')
       ) +
       createCard(
         '17/12',
         'sábado',
-        createGame('a confirmar', '12:00', 'a confirmar', '')
+        createGame('croácia', '12:00', 'marrocos', '2 x 1')
       ) +
       createCard(
         '18/12',
         'domingo',
-        createGame('argentina', '12:00', 'a confirmar', '')
+        createGame('argentina', '12:00', 'frança', '')
       )
     allGamesMenu.classList.add('activated')
     brazilGamesMenu.classList.remove('activated')

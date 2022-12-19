@@ -207,7 +207,7 @@ function allGames() {
       createCard(
         '18/12',
         'domingo',
-        createGame('argentina', '12:00', 'frança', '')
+        createGame('argentina', '12:00', 'frança', '3 (4) x 3 (2)')
       )
     allGamesMenu.classList.add('activated')
     brazilGamesMenu.classList.remove('activated')
